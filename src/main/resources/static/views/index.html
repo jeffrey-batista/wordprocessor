@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Main Page</title>
+</head>
+<body ng-app="demo">
+<hr/>
+<div class="container" ng-controller="StringProcessorController">
+    <div class="row">
+        <label>userInput</label> <input type="text" ng-model="originalString" ng-list
+                                        class="input-sm custom-width spacing"
+                                        placeholder="type in some jibberish"/>
+        <button ng-click="checkString()" class="btn btn-sm btn-info">check string</button>
+    </div>
+
+    <hr/>
+    <div class="row">
+        <p>output: {{output}} </p>
+    </div>
+    <hr/>
+</div>
+</body>
+<script src="js/lib/angular.min.js"></script>
+<script src="js/lib/ui-bootstrap-tpls-2.5.0.min.js"></script>
+<script src="js/app/app.js"></script>
+<script src="js/app/StringProcessorController.js"></script>
+<script src="js/app/StringSearcher.js"></script>
+<link rel="stylesheet" href="css/lib/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/app/app.css"/>
+</html>
